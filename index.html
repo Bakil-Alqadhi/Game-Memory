@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Memory Game</title>
+</head>
+<body>
+
+    <div class="control-buttons">
+        <div class="check">
+            <h3>Choose Level :</h3>
+        Easy : <input type="checkbox" name="" id="easy">
+        <br>
+        Medium : <input type="checkbox" name="" id="medium">
+        <br>
+        Difficult : <input type="checkbox" name="" id="difficult">
+        </div>
+        <!-- <select name="select" id="select"> 
+            <option value="medium">medium</option>
+            <option value="easy">easy</option>
+            <option value="difficult">difficult</option>
+        </select> -->
+        <span>Start Game</span>
+    </div>
+
+
+
+    <div class="info-container">
+        <div class="name">
+            Hello: <span></span>
+        </div>
+        <div class="tries">
+            Wrong Tries: <span>0</span>
+        </div>
+    </div>
+<!-- style="width: 1100px; -->
+
+    <div class="memory-game-blocks difficult" id="difficult" style="width: 1100px;" >
+        <div class="game-block" data-technology="linux">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="imgs/linux.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-technology="linux">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="imgs/linux.png" alt="">
+            </div>
+        </div>
+
+        <div class="game-block" data-technology="c-sharp">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="imgs/c-sharp.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-technology="c-sharp">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="imgs/c-sharp.png" alt="">
+            </div>
+        </div>
+
+        <div class="game-block" data-technology="css-3">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="imgs/css-3.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-technology="css-3">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="imgs/css-3.png" alt="">
+            </div>
+        </div>
+
+        <div class="game-block" data-technology="github">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="imgs/github.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-technology="github">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="imgs/github.png" alt="">
+            </div>
+        </div>
+
+        <div class="game-block" data-technology="html-5">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="imgs/html-5.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-technology="html-5">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="imgs/html-5.png" alt="">
+            </div>
+        </div>
+
+        <div class="game-block" data-technology="java-script">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="imgs/java-script.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-technology="java-script">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="imgs/java-script.png" alt="">
+            </div>
+        </div>
+
+        <div class="game-block" data-technology="php">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="imgs/php.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-technology="php">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="imgs/php.png" alt="">
+            </div>
+        </div>
+
+        <div class="game-block" data-technology="python">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="imgs/python.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-technology="python">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="imgs/python.png" alt="">
+            </div>
+        </div>
+
+        <div class="game-block" data-technology="react">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="imgs/react.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-technology="react">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="imgs/react.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-technology="vue">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="imgs/vue.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-technology="vue">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="imgs/vue.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="memory-game-blocks medium" id="medium" style="width: 800px;">
+        <div class="game-block" data-technology="python">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="imgs/python.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-technology="python">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="imgs/python.png" alt="">
+            </div>
+        </div>
+
+        <div class="game-block" data-technology="react">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="imgs/react.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-technology="react">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="imgs/react.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-technology="vue">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="imgs/vue.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-technology="vue">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="imgs/vue.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="memory-game-blocks easy" id="easy" style="width: 500px;">
+        <div class="game-block" data-technology="java-script">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="imgs/java-script.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-technology="java-script">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="imgs/java-script.png" alt="">
+            </div>
+        </div>
+
+        <div class="game-block" data-technology="php">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="imgs/php.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-technology="php">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="imgs/php.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <audio src="audios/101083596.mp3" id="success"></audio>
+    <audio src="audios/107586718.mp3" id="fail"></audio>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
